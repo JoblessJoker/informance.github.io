@@ -13,8 +13,10 @@
 
         if(userAgent.match("Android")){
             window.location.replace("intent://www.youtube.com/lovekeshpalyt#Intent;scheme=https;package=com.google.android.youtube;S.browser_fallback_url=https://www.youtube.com;end");
+            window.location.replace("https://www.youtube.com/");
         }else if (userAgent.match("iPhone")){
             window.location.replace("vnd.youtube://www.youtube.com/lovekeshpalyt");
+            window.location.replace("https://www.youtube.com/");
         }else{
             window.location.replace("https://www.youtube.com/");
         }
