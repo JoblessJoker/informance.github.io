@@ -7,13 +7,11 @@
 
 <body>
     <p>Redirecting...</p>
-    <p id="demo"></p>
+
     <script>
         var userAgent = navigator.userAgent;
 
-        document.getElementById("demo").innerHTML = userAgent + "\n\n Index of Android = " + userAgent.indexOf("android") > -1;
-
-        if(userAgent.indexOf("android") > -1){
+        if(userAgent.indexOf("Android") > -1){
             redirectAndroid();
         }else{
             window.location.replace("https://www.youtube.com/")
