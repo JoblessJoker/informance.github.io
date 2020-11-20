@@ -13,9 +13,10 @@
 
         if(userAgent.indexOf("Android") > -1){
             redirectAndroid();
-        }else{
-            window.location.replace("https://www.youtube.com/")
         }
+        //else{
+        //     window.location.replace("https://www.youtube.com/")
+        // }
 
         function redirectAndroid(){
             window.location.replace("intent://www.youtube.com/lovekeshpalyt#Intent;scheme=https;package=com.google.android.youtube;end");
