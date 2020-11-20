@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Informance</title>
+</head>
+
+<body>
+    <p>Redirecting...</p>
+    <script>
+        var userAgent = navigator.userAgent;
+
+        if(userAgent.search("Android")){
+            redirectAndroid();
+        }else{
+            window.location.replace("https://www.youtube.com/")
+        }
+
+        function redirectAndroid(){
+            window.location.replace("intent://www.youtube.com/lovekeshpalyt#Intent;scheme=https;package=com.google.android.youtube;end");
+        }
+    </script>
+</body>
+
+</html>
