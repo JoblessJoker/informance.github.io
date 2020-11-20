@@ -6,18 +6,17 @@
 </head>
 
 <body>
-    <p>Redirecting...</p>
+    <p>Changed...</p>
+    <p id="demo"></p>
     <script>
         var userAgent = navigator.userAgent;
 
-        if(userAgent.indexOf("Android") > -1){
-            redirectAndroid();
+        if(userAgent.match("Android")){
+            window.location.replace("intent://www.youtube.com/lovekeshpalyt#Intent;scheme=https;package=com.google.android.youtube;S.browser_fallback_url=https://www.youtube.com;end");
+        }else if (userAgent.match("iPhone")){
+            window.location.replace("vnd.youtube://www.youtube.com/lovekeshpalyt");
         }else{
             window.location.replace("https://www.youtube.com/");
-        }
-
-        function redirectAndroid(){
-            window.location.replace("intent://www.youtube.com/lovekeshpalyt#Intent;scheme=https;package=com.google.android.youtube;S.browser_fallback_url=https://www.youtube.com;end");
         }
     </script>
 </body>
